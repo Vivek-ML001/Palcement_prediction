@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement Prediction</title>
+</head>
+<body>
+    <h2>Placement Predictor</h2>
+    <form method="POST" action="/predict">
+        <label for="cgpa">CGPA:</label>
+        <input type="text" name="cgpa" required><br><br>
+        
+        <label for="iq">IQ:</label>
+        <input type="text" name="iq" required><br><br>
+        
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction is not none %}
+        <h3 style="color: green;">Result: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
