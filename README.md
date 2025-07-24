@@ -38,3 +38,24 @@ This project is a machine learning-based placement prediction system that predic
    git clone https://github.com/Vivek-ML001/Palcement_prediction.git
    cd Palcement_prediction
 
+python -m venv placement_env
+placement_env\Scripts\activate  # For Windows
+
+pip install -r requirements.txt
+
+python placement_predictor.py
+
+
+Palcement_prediction/
+├── data/
+│   └── student_data.csv
+├── placement_predictor.py
+├── model.pkl
+├── README.md
+└── requirements.txt
+
+
+---
+
+Let me know if you want this as a **Jupyter Notebook project**, want to add **graphs**, or include a **Streamlit web app version** – I’ll tailor the README further!
+Created with ❤️ by Vivek Kumar
